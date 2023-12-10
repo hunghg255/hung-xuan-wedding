@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive !important;
+    color: #ffffff !important;
+}
+
+/* main {
+    position: relative;
+    z-index: 22;
+}
+
+#confetti {
+    position: relative;
+    z-index: 0;
+} */
+
+
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.dark-section {
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+footer {
+    background-color: #111111 !important;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+}
