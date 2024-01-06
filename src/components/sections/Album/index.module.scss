@@ -18,7 +18,7 @@
 .list {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 12px;
+  gap: 10px;
 
   @media (max-width: 1025px) {
     grid-template-columns: auto auto;
@@ -29,7 +29,11 @@
     height: 300px;
     object-fit: cover;
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1366px) {
+      height: 220px;
+    }
+
+    @media (max-width: 576px) {
       height: 180px;
     }
   }

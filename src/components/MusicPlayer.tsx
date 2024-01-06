@@ -42,9 +42,9 @@ export default function MusicPlayer() {
   }, []);
 
   const replay = () => {
-    (audioRef.current as any).currentTime=0;
-(audioRef.current as any).play();
-  }
+    (audioRef.current as any).currentTime = 0;
+    (audioRef.current as any).play();
+  };
 
   return (
     <div
@@ -93,9 +93,7 @@ export default function MusicPlayer() {
       <div className={styles.mobileControls}>
         <div className={styles.control}>
           <a href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'} target={'_blank'}>
-            <IconLink
-              className={styles.iconLink}
-            />
+            <IconLink className={styles.iconLink} />
           </a>
         </div>
         <div className={styles.control}>
@@ -107,21 +105,17 @@ export default function MusicPlayer() {
               } else audioRef.current?.pause();
             }}
           >
-            {paused ? <IconPlay
-              className={styles.iconPlay}
-
-            /> : <IconPause
-              className={styles.iconPause}
-
-            />}
+            {paused ? (
+              <IconPlay className={styles.iconPlay} />
+            ) : (
+              <IconPause className={styles.iconPause} />
+            )}
           </a>
         </div>
       </div>
       <div className={styles.controls}>
         <a className={styles.smallBtn} onClick={replay}>
-          <IconRepeat
-          className={styles.iconRepeat}
-          />
+          <IconRepeat className={styles.iconRepeat} />
         </a>
         <a
           className={styles.bigBtn}
@@ -132,21 +126,18 @@ export default function MusicPlayer() {
             } else audioRef.current?.pause();
           }}
         >
-          {paused ? <IconPlay
-              className={styles.iconPlay}
-
-          /> : <IconPause
-              className={styles.iconPause}
-
-          />}
+          {paused ? (
+            <IconPlay className={styles.iconPlay} />
+          ) : (
+            <IconPause className={styles.iconPause} />
+          )}
         </a>
-        <a className={styles.smallBtn}
-        href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'} target={'_blank'}
+        <a
+          className={styles.smallBtn}
+          href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'}
+          target={'_blank'}
         >
-          <IconLink
-              className={styles.iconLink}
-
-          />
+          <IconLink className={styles.iconLink} />
         </a>
       </div>
     </div>
