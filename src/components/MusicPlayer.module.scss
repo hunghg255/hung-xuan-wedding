@@ -104,7 +104,7 @@
       background-size: 300%;
       background-position: center;
       border-radius: 8px;
-      margin-left: 16px;
+      margin-left: 10px;
       margin-right: 8px;
     }
     .track {
@@ -127,9 +127,11 @@
     }
     .mobileControls {
       display: flex;
-      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      padding-right: 10px;
+
       .control {
-        width: 50px;
         font-size: 1.4em;
 
         a {
@@ -159,10 +161,10 @@
 .iconPause,
 .iconLink,
 .iconRepeat {
-   path {
+  path {
     fill: #362222 !important;
 
-    @media (max-width: 1025px){
+    @media (max-width: 1025px) {
       fill: white !important;
     }
   }

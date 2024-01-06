@@ -97,41 +97,50 @@ export default function MusicPlayer() {
           </a>
         </div>
         <div className={styles.control}>
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              if (paused) {
+          {paused ? (
+            <a
+              onClick={(e) => {
+                e.preventDefault();
                 audioRef.current?.play();
-              } else audioRef.current?.pause();
-            }}
-          >
-            {paused ? (
+              }}
+            >
               <IconPlay className={styles.iconPlay} />
-            ) : (
+            </a>
+          ) : (
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                audioRef.current?.pause();
+              }}
+            >
               <IconPause className={styles.iconPause} />
-            )}
-          </a>
+            </a>
+          )}
         </div>
       </div>
       <div className={styles.controls}>
         <a className={styles.smallBtn} onClick={replay}>
           <IconRepeat className={styles.iconRepeat} />
         </a>
-        <a
-          className={styles.bigBtn}
-          onClick={(e) => {
-            e.preventDefault();
-            if (paused) {
+        {paused ? (
+          <a
+            onClick={(e) => {
+              e.preventDefault();
               audioRef.current?.play();
-            } else audioRef.current?.pause();
-          }}
-        >
-          {paused ? (
+            }}
+          >
             <IconPlay className={styles.iconPlay} />
-          ) : (
+          </a>
+        ) : (
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              audioRef.current?.pause();
+            }}
+          >
             <IconPause className={styles.iconPause} />
-          )}
-        </a>
+          </a>
+        )}
         <a
           className={styles.smallBtn}
           href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'}
