@@ -19,6 +19,7 @@ export default function MainSection() {
       <Leaves />
       <div className={styles.mobileFigure}>
         <div>
+          <div className={styles.bg}></div>
           <div className={styles.figure}>
             <img src={'/figures/wedding-main-01.JPG'} />
           </div>

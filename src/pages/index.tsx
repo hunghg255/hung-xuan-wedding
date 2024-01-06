@@ -46,6 +46,7 @@ export default function Home() {
           }}
         />
         <div className={styles.imgSmall}>
+          <div className={styles.bg}></div>
           <div>
             <img src={'/figures/wedding-main-01.JPG'} />
           </div>

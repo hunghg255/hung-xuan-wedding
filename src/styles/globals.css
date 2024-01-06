@@ -1,3 +1,9 @@
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-lighter: #3cad6e;
+  animation: rainbow 40s linear infinite;
+}
+
 html,
 body,
 #__next {
@@ -19,5 +25,412 @@ html {
 @media (max-width: 1025px) {
   #__next {
     padding-bottom: 75px;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    --ifm-color-primary: #00a98e;
+    --ifm-color-primary-lighter: #009ff7;
+  }
+
+  1.25% {
+    --ifm-color-primary: #00a996;
+    --ifm-color-primary-lighter: #009dfa;
+  }
+
+  2.5% {
+    --ifm-color-primary: #00a99f;
+    --ifm-color-primary-lighter: #009bfc;
+  }
+
+  3.75% {
+    --ifm-color-primary: #00a9a7;
+    --ifm-color-primary-lighter: #0098fd;
+  }
+
+  5% {
+    --ifm-color-primary: #00a9b0;
+    --ifm-color-primary-lighter: #0096fd;
+  }
+
+  6.25% {
+    --ifm-color-primary: #00a9b8;
+    --ifm-color-primary-lighter: #0093fd;
+  }
+
+  7.5% {
+    --ifm-color-primary: #00a9c0;
+    --ifm-color-primary-lighter: #2e90fc;
+  }
+
+  8.75% {
+    --ifm-color-primary: #00a8c7;
+    --ifm-color-primary-lighter: #4d8dfa;
+  }
+
+  10% {
+    --ifm-color-primary: #00a8cf;
+    --ifm-color-primary-lighter: #638af8;
+  }
+
+  11.25% {
+    --ifm-color-primary: #00a7d5;
+    --ifm-color-primary-lighter: #7587f5;
+  }
+
+  12.5% {
+    --ifm-color-primary: #00a6dc;
+    --ifm-color-primary-lighter: #8583f1;
+  }
+
+  13.75% {
+    --ifm-color-primary: #00a6e2;
+    --ifm-color-primary-lighter: #9280ed;
+  }
+
+  15% {
+    --ifm-color-primary: #00a4e7;
+    --ifm-color-primary-lighter: #9f7ce9;
+  }
+
+  16.25% {
+    --ifm-color-primary: #00a3ec;
+    --ifm-color-primary-lighter: #aa78e3;
+  }
+
+  17.5% {
+    --ifm-color-primary: #00a2f1;
+    --ifm-color-primary-lighter: #b574dd;
+  }
+
+  18.75% {
+    --ifm-color-primary: #00a0f4;
+    --ifm-color-primary-lighter: #be71d7;
+  }
+
+  20% {
+    --ifm-color-primary: #009ff7;
+    --ifm-color-primary-lighter: #c76dd1;
+  }
+
+  21.25% {
+    --ifm-color-primary: #009dfa;
+    --ifm-color-primary-lighter: #cf69c9;
+  }
+
+  22.5% {
+    --ifm-color-primary: #009bfc;
+    --ifm-color-primary-lighter: #d566c2;
+  }
+
+  23.75% {
+    --ifm-color-primary: #0098fd;
+    --ifm-color-primary-lighter: #dc63ba;
+  }
+
+  25% {
+    --ifm-color-primary: #0096fd;
+    --ifm-color-primary-lighter: #e160b3;
+  }
+
+  26.25% {
+    --ifm-color-primary: #0093fd;
+    --ifm-color-primary-lighter: #e65eab;
+  }
+
+  27.5% {
+    --ifm-color-primary: #2e90fc;
+    --ifm-color-primary-lighter: #e95ca2;
+  }
+
+  28.75% {
+    --ifm-color-primary: #4d8dfa;
+    --ifm-color-primary-lighter: #ed5a9a;
+  }
+
+  30% {
+    --ifm-color-primary: #638af8;
+    --ifm-color-primary-lighter: #ef5992;
+  }
+
+  31.25% {
+    --ifm-color-primary: #7587f5;
+    --ifm-color-primary-lighter: #f15989;
+  }
+
+  32.5% {
+    --ifm-color-primary: #8583f1;
+    --ifm-color-primary-lighter: #f25981;
+  }
+
+  33.75% {
+    --ifm-color-primary: #9280ed;
+    --ifm-color-primary-lighter: #f25a79;
+  }
+
+  35% {
+    --ifm-color-primary: #9f7ce9;
+    --ifm-color-primary-lighter: #f25c71;
+  }
+
+  36.25% {
+    --ifm-color-primary: #aa78e3;
+    --ifm-color-primary-lighter: #f15e69;
+  }
+
+  37.5% {
+    --ifm-color-primary: #b574dd;
+    --ifm-color-primary-lighter: #ef6061;
+  }
+
+  38.75% {
+    --ifm-color-primary: #be71d7;
+    --ifm-color-primary-lighter: #ed635a;
+  }
+
+  40% {
+    --ifm-color-primary: #c76dd1;
+    --ifm-color-primary-lighter: #eb6552;
+  }
+
+  41.25% {
+    --ifm-color-primary: #cf69c9;
+    --ifm-color-primary-lighter: #e8694b;
+  }
+
+  42.5% {
+    --ifm-color-primary: #d566c2;
+    --ifm-color-primary-lighter: #e46c44;
+  }
+
+  43.75% {
+    --ifm-color-primary: #dc63ba;
+    --ifm-color-primary-lighter: #e06f3d;
+  }
+
+  45% {
+    --ifm-color-primary: #e160b3;
+    --ifm-color-primary-lighter: #db7336;
+  }
+
+  46.25% {
+    --ifm-color-primary: #e65eab;
+    --ifm-color-primary-lighter: #d77630;
+  }
+
+  47.5% {
+    --ifm-color-primary: #e95ca2;
+    --ifm-color-primary-lighter: #d17a2a;
+  }
+
+  48.75% {
+    --ifm-color-primary: #ed5a9a;
+    --ifm-color-primary-lighter: #cc7d24;
+  }
+
+  50% {
+    --ifm-color-primary: #ef5992;
+    --ifm-color-primary-lighter: #c6811e;
+  }
+
+  51.25% {
+    --ifm-color-primary: #f15989;
+    --ifm-color-primary-lighter: #bf8418;
+  }
+
+  52.5% {
+    --ifm-color-primary: #f25981;
+    --ifm-color-primary-lighter: #b98713;
+  }
+
+  53.75% {
+    --ifm-color-primary: #f25a79;
+    --ifm-color-primary-lighter: #b28a0f;
+  }
+
+  55% {
+    --ifm-color-primary: #f25c71;
+    --ifm-color-primary-lighter: #ab8d0c;
+  }
+
+  56.25% {
+    --ifm-color-primary: #f15e69;
+    --ifm-color-primary-lighter: #a3900b;
+  }
+
+  57.5% {
+    --ifm-color-primary: #ef6061;
+    --ifm-color-primary-lighter: #9c920d;
+  }
+
+  58.75% {
+    --ifm-color-primary: #ed635a;
+    --ifm-color-primary-lighter: #949510;
+  }
+
+  60% {
+    --ifm-color-primary: #eb6552;
+    --ifm-color-primary-lighter: #8b9715;
+  }
+
+  61.25% {
+    --ifm-color-primary: #e8694b;
+    --ifm-color-primary-lighter: #83991b;
+  }
+
+  62.5% {
+    --ifm-color-primary: #e46c44;
+    --ifm-color-primary-lighter: #7a9b21;
+  }
+
+  63.75% {
+    --ifm-color-primary: #e06f3d;
+    --ifm-color-primary-lighter: #719d27;
+  }
+
+  65% {
+    --ifm-color-primary: #db7336;
+    --ifm-color-primary-lighter: #679e2e;
+  }
+
+  66.25% {
+    --ifm-color-primary: #d77630;
+    --ifm-color-primary-lighter: #5da035;
+  }
+
+  67.5% {
+    --ifm-color-primary: #d17a2a;
+    --ifm-color-primary-lighter: #51a13c;
+  }
+
+  68.75% {
+    --ifm-color-primary: #cc7d24;
+    --ifm-color-primary-lighter: #44a244;
+  }
+
+  70% {
+    --ifm-color-primary: #c6811e;
+    --ifm-color-primary-lighter: #34a44b;
+  }
+
+  71.25% {
+    --ifm-color-primary: #bf8418;
+    --ifm-color-primary-lighter: #1ba553;
+  }
+
+  72.5% {
+    --ifm-color-primary: #b98713;
+    --ifm-color-primary-lighter: #00a65b;
+  }
+
+  73.75% {
+    --ifm-color-primary: #b28a0f;
+    --ifm-color-primary-lighter: #00a663;
+  }
+
+  75% {
+    --ifm-color-primary: #ab8d0c;
+    --ifm-color-primary-lighter: #00a76c;
+  }
+
+  76.25% {
+    --ifm-color-primary: #a3900b;
+    --ifm-color-primary-lighter: #00a874;
+  }
+
+  77.5% {
+    --ifm-color-primary: #9c920d;
+    --ifm-color-primary-lighter: #00a87d;
+  }
+
+  78.75% {
+    --ifm-color-primary: #949510;
+    --ifm-color-primary-lighter: #00a985;
+  }
+
+  80% {
+    --ifm-color-primary: #8b9715;
+    --ifm-color-primary-lighter: #00a98e;
+  }
+
+  81.25% {
+    --ifm-color-primary: #83991b;
+    --ifm-color-primary-lighter: #00a996;
+  }
+
+  82.5% {
+    --ifm-color-primary: #7a9b21;
+    --ifm-color-primary-lighter: #00a99f;
+  }
+
+  83.75% {
+    --ifm-color-primary: #719d27;
+    --ifm-color-primary-lighter: #00a9a7;
+  }
+
+  85% {
+    --ifm-color-primary: #679e2e;
+    --ifm-color-primary-lighter: #00a9b0;
+  }
+
+  86.25% {
+    --ifm-color-primary: #5da035;
+    --ifm-color-primary-lighter: #00a9b8;
+  }
+
+  87.5% {
+    --ifm-color-primary: #51a13c;
+    --ifm-color-primary-lighter: #00a9c0;
+  }
+
+  88.75% {
+    --ifm-color-primary: #44a244;
+    --ifm-color-primary-lighter: #00a8c7;
+  }
+
+  90% {
+    --ifm-color-primary: #34a44b;
+    --ifm-color-primary-lighter: #00a8cf;
+  }
+
+  91.25% {
+    --ifm-color-primary: #1ba553;
+    --ifm-color-primary-lighter: #00a7d5;
+  }
+
+  92.5% {
+    --ifm-color-primary: #00a65b;
+    --ifm-color-primary-lighter: #00a6dc;
+  }
+
+  93.75% {
+    --ifm-color-primary: #00a663;
+    --ifm-color-primary-lighter: #00a6e2;
+  }
+
+  95% {
+    --ifm-color-primary: #00a76c;
+    --ifm-color-primary-lighter: #00a4e7;
+  }
+
+  96.25% {
+    --ifm-color-primary: #00a874;
+    --ifm-color-primary-lighter: #00a3ec;
+  }
+
+  97.5% {
+    --ifm-color-primary: #00a87d;
+    --ifm-color-primary-lighter: #00a2f1;
+  }
+
+  98.75% {
+    --ifm-color-primary: #00a985;
+    --ifm-color-primary-lighter: #00a0f4;
+  }
+
+  to {
+    --ifm-color-primary: #00a98e;
+    --ifm-color-primary-lighter: #009ff7;
   }
 }
