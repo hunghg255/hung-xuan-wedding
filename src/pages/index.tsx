@@ -46,7 +46,10 @@ export default function Home() {
           }}
         />
         <div className={styles.imgSmall}>
-          <img src={'/figures/wedding-main-01.JPG'} />
+          <div>
+            <img src={'/figures/wedding-main-01.JPG'} />
+          </div>
+          <img className={styles.markImg} src={'/figures/vectorflower.png'} />
         </div>
         <MusicPlayer />
       </div>

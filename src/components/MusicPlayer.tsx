@@ -128,6 +128,7 @@ export default function MusicPlayer() {
               e.preventDefault();
               audioRef.current?.play();
             }}
+            className={styles.bigBtn}
           >
             <IconPlay className={styles.iconPlay} />
           </a>
@@ -137,6 +138,7 @@ export default function MusicPlayer() {
               e.preventDefault();
               audioRef.current?.pause();
             }}
+            className={styles.bigBtn}
           >
             <IconPause className={styles.iconPause} />
           </a>

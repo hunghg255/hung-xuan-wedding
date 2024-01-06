@@ -18,7 +18,10 @@ export default function MainSection() {
     <div className={styles.mainSection} id='header'>
       <Leaves />
       <div className={styles.mobileFigure}>
-        <img src='/figures/wedding-main-01.JPG' className={styles.figure} />
+        <div className={styles.figure}>
+          <img src={'/figures/wedding-main-01.JPG'} />
+        </div>
+        <img className={styles.markImg} src={'/figures/vectorflower.png'} />
       </div>
       <div
         className={styles.welcomeText}
