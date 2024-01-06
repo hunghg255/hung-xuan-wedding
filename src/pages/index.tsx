@@ -46,7 +46,7 @@ export default function Home() {
           }}
         />
         <div className={styles.imgSmall}>
-          <img src={'/figures/wedding-main-01.jpg'} />
+          <img src={'/figures/wedding-main-01.JPG'} />
         </div>
         <MusicPlayer />
       </div>
