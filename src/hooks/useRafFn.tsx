@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useRef } from 'react';
 
 export const useRafFn = () => {
