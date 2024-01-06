@@ -18,10 +18,12 @@ export default function MainSection() {
     <div className={styles.mainSection} id='header'>
       <Leaves />
       <div className={styles.mobileFigure}>
-        <div className={styles.figure}>
-          <img src={'/figures/wedding-main-01.JPG'} />
+        <div>
+          <div className={styles.figure}>
+            <img src={'/figures/wedding-main-01.JPG'} />
+          </div>
+          <img className={styles.markImg} src={'/figures/vectorflower.png'} />
         </div>
-        <img className={styles.markImg} src={'/figures/vectorflower.png'} />
       </div>
       <div
         className={styles.welcomeText}
@@ -41,10 +43,8 @@ export default function MainSection() {
           fontFamily: TanMonCheriFont.style.fontFamily,
         }}
       >
-        <div className={styles.groom}>
-          Hoàng Gia Hùng
-          <IconHeartFill className={styles.iconHeart} />
-        </div>
+        <div className={styles.groom}>Hoàng Gia Hùng</div>
+        <IconHeartFill className={styles.iconHeart} />
         <div className={styles.bride}>
           Ngô Th<span className={TanPearlFont.className}>ị</span> Xuân
         </div>

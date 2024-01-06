@@ -46,7 +46,8 @@ const nextConfig = {
         headers: securityHeaders,
       },
       {
-        source: '/:all*(svg|jpg|jpeg|png|webp|avif|otf|ttf|woff|woff2|eot)',
+        source:
+          '/:all*(svg|jpg|JPG|jpeg|png|webp|avif|otf|ttf|woff|woff2|eot|mp4|webm|ogg|mp3|wav|flac|aac)',
         locale: false,
         headers: [
           {

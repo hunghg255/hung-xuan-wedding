@@ -131,15 +131,20 @@
     padding: 2em 10px;
 
     .mobileFigure {
-      display: block;
+      display: flex;
+      align-items: center;
       z-index: 99;
-      width: 230px;
-      height: 230px;
-      margin: auto;
-      border-radius: 50%;
-      position: relative;
+      min-height: 500px;
 
       > div {
+        width: 230px;
+        height: 230px;
+        margin: auto;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      > div > div {
         overflow: hidden;
         width: 230px;
         height: 230px;
@@ -175,6 +180,12 @@
 
     .names {
       font-size: 2.4em;
+
+      @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .shortStory {
