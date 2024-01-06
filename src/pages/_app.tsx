@@ -1,8 +1,6 @@
 import '@app/styles/globals.css';
 import type { AppProps } from 'next/app';
 import 'antd-css-utilities/utility.min.css';
-import { GlobalScrollbar } from 'mac-scrollbar';
-import 'mac-scrollbar/dist/mac-scrollbar.css';
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -28,7 +26,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
-      <GlobalScrollbar />
     </>
   );
 }

@@ -11,10 +11,8 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
-    "antd": "^5.12.5",
     "antd-css-utilities": "^2.0.4",
     "leaflet": "^1.9.4",
-    "mac-scrollbar": "^0.13.6",
     "next": "14.0.4",
     "react": "^18",
     "react-countdown": "^2.3.5",

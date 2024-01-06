@@ -37,17 +37,6 @@ const nextConfig = {
   experimental: {
     esmExternals: 'loose',
   },
-  transpilePackages: [
-    'antd',
-    '@ant-design',
-    'rc-util',
-    'rc-pagination',
-    'rc-picker',
-    'rc-notification',
-    'rc-tooltip',
-    'rc-tree',
-    'rc-table',
-  ],
   headers: async function headers() {
     if (process.env.NODE_ENV === 'development') return [];
 
