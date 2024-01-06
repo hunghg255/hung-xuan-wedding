@@ -145,7 +145,8 @@
         top: 0;
         left: 0;
         border-radius: 50%;
-        filter: blur(120px);
+        filter: blur(72px);
+        -webkit-filter: blur(72px);
         pointer-events: none;
         // background-image: conic-gradient(
         //   from 90deg at 50%50%,

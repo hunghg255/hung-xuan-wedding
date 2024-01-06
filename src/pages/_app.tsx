@@ -2,6 +2,9 @@ import '@app/styles/globals.css';
 import type { AppProps } from 'next/app';
 import 'antd-css-utilities/utility.min.css';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+
+const Plum = dynamic(() => import('@app/components/Plum/Plum'), { ssr: false });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,6 +29,8 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
+
+      <Plum />
     </>
   );
 }

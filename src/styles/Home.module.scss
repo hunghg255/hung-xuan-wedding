@@ -63,7 +63,8 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(72px);
+    -webkit-filter: blur(72px);
     transform: scale(1.4);
     pointer-events: none;
     // background-image: conic-gradient(
