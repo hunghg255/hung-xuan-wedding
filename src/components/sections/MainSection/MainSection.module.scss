@@ -1,0 +1,216 @@
+.mainSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4em;
+  position: relative;
+  .mobileFigure {
+    display: none;
+  }
+
+  .welcomeText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6em;
+    .welcome {
+      font-size: 1.4em;
+    }
+    .guest {
+      margin: 0 -0.2em;
+      padding: 0 0.2em;
+      align-self: flex-start;
+      font-size: 2em;
+      font-weight: 600;
+      border-bottom: 2px dashed #362222;
+    }
+  }
+
+  .title {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  .names {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #362222;
+    position: relative;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+    .bride {
+    }
+    .groom {
+      position: relative;
+      .connector {
+        position: absolute;
+        top: 0;
+        transform: rotate(30deg);
+        font-size: 0.6em;
+      }
+    }
+
+    .ornament {
+      position: absolute;
+      bottom: -0.4em;
+      height: 0.6em;
+      left: 0;
+    }
+  }
+
+  .shortStory {
+    width: 60%;
+    margin-bottom: 4em;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .button {
+      cursor: pointer;
+      padding: 0.4em 0.4em;
+      border-radius: 99px;
+      align-self: flex-start;
+      align-items: center;
+      display: flex;
+      gap: 0.4em;
+      flex-direction: row;
+      background-color: #362222;
+      color: white;
+
+      .text {
+        padding-left: 0.8em;
+      }
+
+      .date {
+        background-color: white;
+        color: #362222;
+        padding: 0.2em 0.6em;
+        border-radius: 99px;
+      }
+    }
+  }
+
+  .families {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.leaf04 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24em;
+  transform: rotate(-120deg);
+  opacity: 0.2;
+}
+
+.leaf05 {
+  position: absolute;
+  right: 3em;
+  bottom: -2em;
+  width: 24em;
+  transform: rotate(-120deg);
+  opacity: 0.4;
+}
+
+.flower {
+  position: absolute;
+  left: 0;
+  bottom: -3em;
+  width: 14em;
+  rotate: 30deg;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1360px) {
+  .mainSection {
+    padding: 2em 10px;
+
+    .mobileFigure {
+      display: block;
+      z-index: 99;
+
+      width: 230px;
+      height: 230px;
+      margin: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid rgb(252, 194, 232);
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title {
+    }
+    .welcomeText {
+      margin-bottom: 1em;
+      .guest {
+        align-self: center;
+      }
+    }
+
+    .names {
+      font-size: 2.4em;
+    }
+
+    .shortStory {
+      align-self: center;
+      width: 80%;
+    }
+    .cta {
+      align-self: center;
+    }
+  }
+  .leaf05 {
+    width: 16em;
+    transform: rotate(-160deg);
+    bottom: 4em;
+    right: -8em;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .mainSection {
+    overflow: hidden;
+    .names {
+      font-size: 3.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mainSection {
+    text-align: center;
+    .names {
+      font-size: 2.4em;
+    }
+    .families {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainSection {
+    .names {
+      font-size: 2em;
+    }
+  }
+}
+
+.iconHeart {
+  path {
+    fill: #ee94ca !important;
+  }
+}

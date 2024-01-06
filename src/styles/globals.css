@@ -1,0 +1,27 @@
+html,
+body,
+#__next {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+}
+
+@media screen and (max-width: 1360px) {
+  #__next {
+    font-size: 14px;
+    height: initial;
+  }
+}
+
+@media (max-width: 1025px) {
+  #__next {
+    padding-bottom: 75px;
+  }
+}
+
+.opa-0 {
+  opacity: 0;
+}

@@ -1,0 +1,169 @@
+.musicPlayer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 24px;
+  z-index: 99;
+
+  .mobileProgress,
+  .mobileControls,
+  .mobileTimer,
+  .mobileArtwork {
+    display: none;
+  }
+  .track {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    .slider {
+      -webkit-appearance: none;
+      flex: 1;
+      height: 4px;
+      display: block;
+      background: #ffccd2;
+      border-radius: 16px;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid #362222;
+      background: #b3541e;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #b3541e;
+      cursor: pointer;
+    }
+  }
+  .controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    a {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #362222;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .bigBtn {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .musicPlayer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #362222;
+    height: 72px;
+    padding-bottom: env(safe-area-inset-bottom);
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    .mobileArtwork {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 2px solid white;
+      background-size: 300%;
+      background-position: center;
+      border-radius: 8px;
+      margin-left: 16px;
+      margin-right: 8px;
+    }
+    .track {
+      flex: 1;
+      align-items: flex-start;
+      text-align: left;
+      font-weight: 600;
+      margin-bottom: 0;
+      .mobileTimer {
+        display: block;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+    .timer {
+      display: none;
+    }
+    .controls {
+      display: none;
+    }
+    .mobileControls {
+      display: flex;
+      flex-direction: row;
+      .control {
+        width: 50px;
+        font-size: 1.4em;
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .mobileProgress {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff48;
+      .progress {
+        height: 4px;
+        background-color: #ffccd2;
+      }
+    }
+  }
+}
+
+.iconPlay,
+.iconPause,
+.iconLink,
+.iconRepeat {
+   path {
+    fill: #362222 !important;
+
+    @media (max-width: 1025px){
+      fill: white !important;
+    }
+  }
+}

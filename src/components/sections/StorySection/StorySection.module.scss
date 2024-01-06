@@ -1,0 +1,33 @@
+.storySection {
+  min-height: 100vh;
+  .content {
+    padding: 4em;
+  }
+  .title {
+    font-size: 4em;
+    position: relative;
+
+    .leaf {
+      position: absolute;
+      top: 1em;
+      left: -2em;
+      opacity: 0.2;
+      transform: rotate(10deg);
+    }
+  }
+  .opening {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .storySection {
+    overflow: hidden;
+    .content {
+      padding: 2em 10px;
+    }
+    .title {
+      font-size: 2.4em;
+    }
+  }
+}

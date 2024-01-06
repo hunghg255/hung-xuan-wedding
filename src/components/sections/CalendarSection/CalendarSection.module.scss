@@ -1,0 +1,81 @@
+.calendarSection {
+  min-height: 100vh;
+  color: #362222;
+  .content {
+    padding: 4em;
+  }
+  .title {
+    font-size: 4em;
+    position: relative;
+
+    .leaf {
+      position: absolute;
+      top: 1em;
+      left: -2em;
+      opacity: 0.2;
+      transform: rotate(10deg);
+    }
+  }
+  .opening {
+    margin: 2em 0;
+    font-size: 2em;
+    .specific {
+      border-bottom: 2px dashed #362222;
+    }
+  }
+
+  .dateSection {
+    color: #2b2b2b;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    .pock {
+      flex: 1;
+      background-color: #ffccd224;
+      padding: 2em 0;
+      border-radius: 2em;
+      .number {
+        font-size: 4em;
+        font-weight: 600;
+      }
+      .unit {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .location {
+    padding: 2em 0;
+    font-size: 2em;
+    a {
+      text-decoration: none;
+      color: #362222;
+    }
+    .address {
+      border-bottom: 2px dashed #362222;
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .calendarSection {
+    .content {
+      padding: 2em 10px;
+    }
+    .title {
+      font-size: 2.4em;
+    }
+    .opening,
+    .location {
+      font-size: 1.4em;
+    }
+    .dateSection {
+      .pock {
+        font-size: 10px;
+      }
+    }
+  }
+}

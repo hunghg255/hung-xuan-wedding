@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "@hunghg255/eslint-config-react",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "linebreak-style": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "multiline-ternary": "off",
+    "no-void": "off"
+  }
+}
