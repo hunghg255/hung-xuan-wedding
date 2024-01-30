@@ -12,24 +12,26 @@
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "antd-css-utilities": "^2.0.4",
+    "autoprefixer": "^10.4.17",
     "leaflet": "^1.9.4",
     "next": "14.0.4",
-    "react": "^18",
+    "react": "^18.2.0",
     "react-countdown": "^2.3.5",
-    "react-dom": "^18",
+    "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
     "react-photo-view": "^1.2.4",
     "react-vertical-timeline-component": "^3.6.0",
-    "sass": "^1.69.5"
+    "sass": "^1.70.0",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@hunghg255/eslint-config-react": "^0.0.26",
     "@types/leaflet": "^1.9.8",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.11.10",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "prettier": "^3.1.1",
-    "typescript": "^5"
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
   }
 }
