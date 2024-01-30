@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app';
 import 'antd-css-utilities/utility.min.css';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import Noise from '@app/components/Noise/Noise';
 
 const Plum = dynamic(() => import('@app/components/Plum/Plum'), { ssr: false });
 
@@ -28,8 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
           content='width=device-width,initial-scale=1,maximum-scale1,shrink-to-fit=no'
         />
       </Head>
-
-      <Noise />
 
       <Component {...pageProps} />
 
