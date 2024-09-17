@@ -10,17 +10,23 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Hung Xuan Wedding</title>
-        <meta name='author' content='Hung Xuan Wedding' />
-        <meta name='keywords' content='Hung Xuan Wedding' />
-        <meta name='description' content='Hung Xuan Wedding' />
+        <title>Hùng Xuân</title>
+        <meta name='author' content='Hùng Xuân' />
+        <meta name='keywords' content='Hùng Xuân' />
+        <meta
+          name='description'
+          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+        />
         <meta name='rating' content='general' />
         <meta name='robots' content='index, follow' />
         <meta name='googlebot' content={'index,follow'} />
         <meta charSet='utf-8' />
         <meta name='theme-color' content='#476055' />
-        <meta name='title' content='Hung Xuan Wedding' />
-        <meta name='description' content='Hung Xuan Wedding' />
+        <meta name='title' content='Hùng Xuân' />
+        <meta
+          name='description'
+          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+        />
         <link rel='shortcut icon' href='https://hunghg255.github.io/together/img/love.png' />
         <meta
           name='viewport'

@@ -1,37 +1,35 @@
 {
   "name": "hung-xuan-wedding",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3004",
     "lint": "next lint",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.19.2",
-    "antd-css-utilities": "^2.0.4",
-    "autoprefixer": "^10.4.17",
+    "antd-css-utilities": "^2.1.0",
+    "autoprefixer": "^10.4.20",
     "leaflet": "^1.9.4",
     "next": "14.0.4",
-    "react": "^18.2.0",
-    "react-countdown": "^2.3.5",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1",
-    "react-photo-view": "^1.2.4",
+    "react": "^18.3.1",
+    "react-countdown": "^2.3.6",
+    "react-dom": "^18.3.1",
+    "react-photo-view": "^1.2.6",
     "react-vertical-timeline-component": "^3.6.0",
-    "sass": "^1.70.0",
-    "sharp": "^0.33.2"
+    "sass": "^1.78.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@hunghg255/eslint-config-react": "^0.0.26",
-    "@types/leaflet": "^1.9.8",
-    "@types/node": "^20.11.10",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.6",
+    "@types/react-dom": "^18.3.0",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3"
-  }
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
 }

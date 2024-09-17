@@ -1,5 +1,4 @@
 import React from 'react';
-import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import styles from './index.module.scss';
 import { Alegreya } from 'next/font/google';
@@ -21,12 +20,12 @@ const Gift = () => {
           <div>
             <img src='/qr/hung.png' alt='bni' />
             <p>123456789</p>
-            <p>Ngo Thi Xuan</p>
+            <p>Ngô Thị Xuân</p>
           </div>
           <div>
-            <img src='/qr/hung.png' alt='bni' />
-            <p>123456789</p>
-            <p>Hoang Gia Hung</p>
+            <img src='/qr/qr-hung.jpg' alt='bni' />
+            <p>TP BANK - 0000 2608 430</p>
+            <p>Hoàng Gia Hùng</p>
           </div>
         </div>
       </div>

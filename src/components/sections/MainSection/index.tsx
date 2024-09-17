@@ -70,7 +70,7 @@ export default function MainSection() {
               fontWeight: 500,
             }}
           >
-            Ông:
+            Ông: Hoàng Gia Lý
           </h3>
           <h3
             style={{
@@ -78,7 +78,7 @@ export default function MainSection() {
               fontWeight: 500,
             }}
           >
-            Bà:{' '}
+            Bà: Nguyễn Thị Tuyên
           </h3>
         </div>
         <div className={'flex-grow-1'}>
@@ -95,7 +95,7 @@ export default function MainSection() {
               fontWeight: 500,
             }}
           >
-            Ông:
+            Ông: Ngô Văn Vụ
           </h3>
           <h3
             style={{
@@ -103,7 +103,7 @@ export default function MainSection() {
               fontWeight: 500,
             }}
           >
-            Bà:{' '}
+            Bà: Phùng Thị Mỹ
           </h3>
         </div>
       </div>
