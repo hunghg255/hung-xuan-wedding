@@ -23,7 +23,7 @@ export default function StorySection() {
           <VerticalTimelineElement
             position={'right'}
             className='vertical-timeline-element--work'
-            date='17h00, ngày 16 tháng 01 năm 2024'
+            date='10h00, ngày 27 tháng 10 năm 2024'
             iconStyle={{ backgroundColor: '#362222', color: 'white' }}
             icon={<IconHeartFill />}
           >
@@ -36,7 +36,7 @@ export default function StorySection() {
           <VerticalTimelineElement
             position={'right'}
             className='vertical-timeline-element--work'
-            date='18h00, ngày 16 tháng 01 năm 2024'
+            date='10h30, ngày 27 tháng 10 năm 2024'
             iconStyle={{ backgroundColor: '#362222', color: 'white' }}
             icon={<IconHeartFill />}
           >
@@ -49,7 +49,7 @@ export default function StorySection() {
           <VerticalTimelineElement
             position={'right'}
             className='vertical-timeline-element--work'
-            date='19h00, ngày 16 tháng 01 năm 2024'
+            date='11h30, ngày 27 tháng 10 năm 2024'
             iconStyle={{ backgroundColor: '#362222', color: 'white' }}
             icon={<IconHeartFill />}
           >
@@ -62,7 +62,7 @@ export default function StorySection() {
           <VerticalTimelineElement
             position={'right'}
             className='vertical-timeline-element--work'
-            date='20h00, ngày 16 tháng 01 năm 2024'
+            date='13h30, ngày 27 tháng 10 năm 2024'
             iconStyle={{ backgroundColor: '#362222', color: 'white' }}
             icon={<IconHeartFill />}
           >

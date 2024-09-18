@@ -13,6 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Hùng Xuân</title>
         <meta name='author' content='Hùng Xuân' />
         <meta name='keywords' content='Hùng Xuân' />
+        <link rel='shortcut icon' href='https://hunghg255.github.io/together/img/love.png' />
+        <meta
+          name='viewport'
+          content='width=device-width,initial-scale=1,maximum-scale1,shrink-to-fit=no'
+        />
+
         <meta
           name='description'
           content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
@@ -27,11 +33,24 @@ export default function App({ Component, pageProps }: AppProps) {
           name='description'
           content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
         />
-        <link rel='shortcut icon' href='https://hunghg255.github.io/together/img/love.png' />
+
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.hungxuan.us/' />
+        <meta property='og:title' content='Hùng Xuân' />
         <meta
-          name='viewport'
-          content='width=device-width,initial-scale=1,maximum-scale1,shrink-to-fit=no'
+          property='og:description'
+          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
         />
+        <meta property='og:image' content='https://www.hungxuan.us/og/og.jpg' />
+
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://www.hungxuan.us/' />
+        <meta property='twitter:title' content='Hùng Xuân' />
+        <meta
+          property='twitter:description'
+          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+        />
+        <meta property='twitter:image' content='https://www.hungxuan.us/og/og.jpg' />
       </Head>
 
       <Component {...pageProps} />

@@ -54,11 +54,18 @@ export default function CalendarSection() {
     >
       <div className={styles.content}>
         <div className={styles.title}>Lịch Trình & Địa Điểm</div>
+
         <div className={styles.opening}>
           Hôn lễ sẽ được tổ chức vào{' '}
           <span className={styles.specific}>12 giờ, ngày 27 tháng 10 năm 2024.</span>
         </div>
         {client && <Countdown date={new Date('2024-10-27T12:00:00+07:00')} renderer={renderer} />}
+
+        <br />
+        <br />
+
+        <div className={styles.title}>Nhà Trai</div>
+
         <div className={styles.location}>
           Buổi lễ được cử hành tại{' '}
           <a
@@ -85,6 +92,7 @@ export default function CalendarSection() {
 
       <div className={styles.content}>
         <div className={styles.title}>Nhà Gái</div>
+
         {/* <div className={styles.opening}>
           Hôn lễ sẽ được tổ chức vào{' '}
           <span className={styles.specific}>12 giờ, ngày 27 tháng 10 năm 2024.</span>
@@ -93,7 +101,7 @@ export default function CalendarSection() {
         <div className={styles.location}>
           {/* Buổi lễ được cử hành tại{' '} */}
           <a
-            href={`https://maps.app.goo.gl/8Wf681b1DGE8su3MA`}
+            href={`https://maps.app.goo.gl/9w7YTb6yGpb1rntw7`}
             className={styles.address}
             target={'_blank'}
           >
@@ -105,7 +113,7 @@ export default function CalendarSection() {
         <div>
           <p>QR Địa điểm</p>
           <img
-            src='/qr/address-hung.png'
+            src='/qr/address-xuan.png'
             style={{
               width: 250,
               height: 250,

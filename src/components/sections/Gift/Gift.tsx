@@ -18,7 +18,7 @@ const Gift = () => {
 
         <div className={styles.qr}>
           <div>
-            <img src='/qr/hung.png' alt='bni' />
+            <img src='/qr/qr-hung.jpg' alt='bni' />
             <p>123456789</p>
             <p>Ngô Thị Xuân</p>
           </div>
