@@ -105,7 +105,7 @@ export default function CalendarSection() {
             className={styles.address}
             target={'_blank'}
           >
-            Thôn Đông Lâm, Xã Hương Lâm, Hiệp Hoà, Bắc Giang
+            Xóm Chỗ, Thôn Đông Lâm, Xã Hương Lâm, Hiệp Hoà, Bắc Giang
           </a>
           .
         </div>

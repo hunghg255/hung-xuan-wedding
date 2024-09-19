@@ -18,13 +18,13 @@ const Gift = () => {
 
         <div className={styles.qr}>
           <div>
-            <img src='/qr/qr-hung.jpg' alt='bni' />
-            <p>123456789</p>
+            <img src='/qr/qr-xuan.png' alt='bni' />
+            <p>Vietinbank - 107872465857</p>
             <p>Ngô Thị Xuân</p>
           </div>
           <div>
             <img src='/qr/qr-hung.jpg' alt='bni' />
-            <p>TP BANK - 0000 2608 430</p>
+            <p>Tpbank - 00002608430</p>
             <p>Hoàng Gia Hùng</p>
           </div>
         </div>

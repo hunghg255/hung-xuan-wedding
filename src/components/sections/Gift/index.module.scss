@@ -21,6 +21,11 @@
   gap: 20px;
   text-align: center;
 
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   @media (max-width: 1025px) {
     display: block;
   }
