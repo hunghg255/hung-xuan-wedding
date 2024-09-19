@@ -6,6 +6,7 @@ import StorySection from '@app/components/sections/StorySection';
 import styles from '@app/styles/Home.module.scss';
 import Gift from '@app/components/sections/Gift/Gift';
 import Album from '@app/components/sections/Album/Album';
+import Footer from '@app/components/Footer/Footer';
 
 export default function Home() {
   return (

@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Hùng Xuân</title>
         <meta name='author' content='Hùng Xuân' />
         <meta name='keywords' content='Hùng Xuân' />
-        <link rel='shortcut icon' href='https://hunghg255.github.io/together/img/love.png' />
+        <link rel='shortcut icon' href='/favicon.ico' />
         <meta
           name='viewport'
           content='width=device-width,initial-scale=1,maximum-scale1,shrink-to-fit=no'

@@ -80,13 +80,19 @@ export default function CalendarSection() {
 
         <div>
           <p>QR Địa điểm</p>
-          <img
-            src='/qr/address-hung.png'
-            style={{
-              width: 250,
-              height: 250,
-            }}
-          />
+          <a
+            href={`https://maps.app.goo.gl/8Wf681b1DGE8su3MA`}
+            className={styles.address}
+            target={'_blank'}
+          >
+            <img
+              src='/qr/address-hung.png'
+              style={{
+                width: 250,
+                height: 250,
+              }}
+            />
+          </a>
         </div>
       </div>
 
@@ -112,13 +118,15 @@ export default function CalendarSection() {
 
         <div>
           <p>QR Địa điểm</p>
-          <img
-            src='/qr/address-xuan.png'
-            style={{
-              width: 250,
-              height: 250,
-            }}
-          />
+          <a href={`https://maps.app.goo.gl/9w7YTb6yGpb1rntw7`} target={'_blank'}>
+            <img
+              src='/qr/address-xuan.png'
+              style={{
+                width: 250,
+                height: 250,
+              }}
+            />
+          </a>
         </div>
       </div>
     </div>
