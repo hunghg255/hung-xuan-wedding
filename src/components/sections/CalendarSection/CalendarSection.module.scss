@@ -3,6 +3,10 @@
   color: #362222;
   .content {
     padding: 4em;
+
+    img {
+      image-rendering: pixelated;
+    }
   }
   .title {
     font-size: 4em;
