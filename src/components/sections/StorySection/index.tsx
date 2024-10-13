@@ -24,7 +24,7 @@ export default function StorySection() {
             position={'right'}
             className='vertical-timeline-element--work'
             date='10h00, ngày 27 tháng 10 năm 2024'
-            iconStyle={{ backgroundColor: '#362222', color: 'white' }}
+            iconStyle={{ backgroundColor: '#333', color: 'white' }}
             icon={<IconHeartFill />}
           >
             <h3 className='vertical-timeline-element-title'>Đón khách & chụp ảnh</h3>
@@ -37,7 +37,7 @@ export default function StorySection() {
             position={'right'}
             className='vertical-timeline-element--work'
             date='10h30, ngày 27 tháng 10 năm 2024'
-            iconStyle={{ backgroundColor: '#362222', color: 'white' }}
+            iconStyle={{ backgroundColor: '#333', color: 'white' }}
             icon={<IconHeartFill />}
           >
             <h3 className='vertical-timeline-element-title'>Làm lễ và khai tiệc</h3>
@@ -50,7 +50,7 @@ export default function StorySection() {
             position={'right'}
             className='vertical-timeline-element--work'
             date='11h30, ngày 27 tháng 10 năm 2024'
-            iconStyle={{ backgroundColor: '#362222', color: 'white' }}
+            iconStyle={{ backgroundColor: '#333', color: 'white' }}
             icon={<IconHeartFill />}
           >
             <h3 className='vertical-timeline-element-title'>Giao lưu và chia sẻ</h3>
@@ -63,7 +63,7 @@ export default function StorySection() {
             position={'right'}
             className='vertical-timeline-element--work'
             date='13h30, ngày 27 tháng 10 năm 2024'
-            iconStyle={{ backgroundColor: '#362222', color: 'white' }}
+            iconStyle={{ backgroundColor: '#333', color: 'white' }}
             icon={<IconHeartFill />}
           >
             <h3 className='vertical-timeline-element-title'>Kết thúc chương trình</h3>

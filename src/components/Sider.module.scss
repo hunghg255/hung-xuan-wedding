@@ -1,11 +1,10 @@
 .sider {
   width: 72px;
-  background-color: #362222;
+  background-color: #3d0505;
   height: 100%;
   z-index: 9;
   display: flex;
   flex-direction: column;
-
   color: white;
   align-items: center;
   justify-content: center;
@@ -35,4 +34,3 @@
     display: none;
   }
 }
-

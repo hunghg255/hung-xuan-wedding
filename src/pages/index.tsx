@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div
       style={{
-        backgroundImage: `url('/background/water-color-01.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        // backgroundImage: `url('/background/water-color-01.png')`,
+        // backgroundSize: 'cover',
+        // backgroundPosition: 'center',
         width: '100%',
         height: '100%',
         position: 'relative',

@@ -3,8 +3,15 @@ import type { AppProps } from 'next/app';
 import 'antd-css-utilities/utility.min.css';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import { Shantell_Sans } from 'next/font/google';
 
 const Plum = dynamic(() => import('@app/components/Plum/Plum'), { ssr: false });
+
+const ShantellSanFont = Shantell_Sans({
+  subsets: ['latin', 'vietnamese'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -52,6 +59,12 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property='twitter:image' content='https://www.hungxuan.us/og/og.jpg' />
       </Head>
+
+      <style jsx global>{`
+        :root {
+          --fontShantellSan: ${ShantellSanFont.style.fontFamily};
+        }
+      `}</style>
 
       <Component {...pageProps} />
 

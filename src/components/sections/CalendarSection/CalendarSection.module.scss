@@ -1,6 +1,6 @@
 .calendarSection {
   // min-height: 100vh;
-  color: #362222;
+  color: #333;
   .content {
     padding: 4em;
 
@@ -24,7 +24,7 @@
     margin: 2em 0;
     font-size: 2em;
     .specific {
-      border-bottom: 2px dashed #362222;
+      border-bottom: 2px dashed #333;
     }
   }
 
@@ -56,10 +56,10 @@
     font-size: 2em;
     a {
       text-decoration: none;
-      color: #362222;
+      color: #333;
     }
     .address {
-      border-bottom: 2px dashed #362222;
+      border-bottom: 2px dashed #333;
     }
   }
 }
@@ -68,9 +68,11 @@
   .calendarSection {
     .content {
       padding: 2em 10px;
+      text-align: center;
     }
     .title {
       font-size: 2.4em;
+      text-align: center;
     }
     .opening,
     .location {

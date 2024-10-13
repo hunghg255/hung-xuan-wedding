@@ -4,6 +4,10 @@
   animation: rainbow 40s linear infinite;
 }
 
+* {
+  font-family: var(--fontShantellSan), sans-serif;
+}
+
 html,
 body,
 #__next {

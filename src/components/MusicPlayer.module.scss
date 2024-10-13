@@ -44,7 +44,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      border: 2px solid #362222;
+      border: 2px solid #333;
       background: #b3541e;
       cursor: pointer;
     }
@@ -71,7 +71,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #362222;
+      color: #333;
       font-size: 16px;
       text-align: center;
     }
@@ -89,7 +89,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    background: #362222;
+    background: #3d0505;
     height: 60px;
     padding-bottom: env(safe-area-inset-bottom);
     color: white;
@@ -164,7 +164,7 @@
 .iconLink,
 .iconRepeat {
   path {
-    fill: #362222 !important;
+    fill: #333 !important;
 
     @media (max-width: 1025px) {
       fill: white !important;

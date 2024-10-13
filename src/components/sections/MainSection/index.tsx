@@ -44,10 +44,22 @@ export default function MainSection() {
           fontFamily: TanMonCheriFont.style.fontFamily,
         }}
       >
-        <div className={styles.groom}>Hoàng Gia Hùng</div>
+        <div
+          className={styles.groom}
+          style={{
+            fontWeight: 500,
+          }}
+        >
+          Gia Hùng
+        </div>
         <IconHeartFill className={styles.iconHeart} />
-        <div className={styles.bride}>
-          Ngô Th<span className={TanPearlFont.className}>ị</span> Xuân
+        <div
+          style={{
+            fontWeight: 500,
+          }}
+          className={styles.bride}
+        >
+          Ngô Xuân
         </div>
       </div>
       {/*<div className={styles.shortStory} style={{fontFamily: alegreyaFont.style.fontFamily}}>*/}

@@ -17,12 +17,26 @@ const Gift = () => {
         <div className={styles.title}>Gift</div>
 
         <div className={styles.qr}>
-          <div>
+          <div
+            style={{
+              border: '2px dashed #ddd',
+              padding: '10px',
+              margin: '10px',
+              borderRadius: '10px',
+            }}
+          >
             <img src='/qr/qr-xuan.png' alt='bni' />
             <p>Vietinbank - 107872465857</p>
             <p>Ngô Thị Xuân</p>
           </div>
-          <div>
+          <div
+            style={{
+              border: '2px dashed #ddd',
+              padding: '10px',
+              margin: '10px',
+              borderRadius: '10px',
+            }}
+          >
             <img src='/qr/qr-hung.jpg' alt='bni' />
             <p>Tpbank - 00002608430</p>
             <p>Hoàng Gia Hùng</p>

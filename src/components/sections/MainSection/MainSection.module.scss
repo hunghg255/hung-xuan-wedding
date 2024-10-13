@@ -22,7 +22,7 @@
       align-self: flex-start;
       font-size: 2em;
       font-weight: 600;
-      border-bottom: 2px dashed #362222;
+      border-bottom: 2px dashed #333;
     }
   }
 
@@ -34,7 +34,7 @@
   .names {
     text-transform: uppercase;
     font-size: 4em;
-    color: #362222;
+    color: #333;
     position: relative;
     margin-bottom: 0.5em;
     display: flex;
@@ -76,7 +76,7 @@
       display: flex;
       gap: 0.4em;
       flex-direction: row;
-      background-color: #362222;
+      background-color: #333;
       color: white;
 
       .text {
@@ -84,8 +84,7 @@
       }
 
       .date {
-        background-color: white;
-        color: #362222;
+        color: #333;
         padding: 0.2em 0.6em;
         border-radius: 99px;
       }
@@ -264,7 +263,8 @@
 }
 
 .iconHeart {
+  font-size: 30px;
   path {
-    fill: #ee94ca !important;
+    fill: #fe82cc !important;
   }
 }

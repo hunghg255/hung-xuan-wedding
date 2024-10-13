@@ -53,7 +53,13 @@ export default function MusicPlayer() {
         fontFamily: alegreyaFont.style.fontFamily,
       }}
     >
-      <audio autoPlay={true} ref={audioRef} src={'/assets/music/TangNhau.mp3'} />
+      <audio
+        autoPlay={true}
+        ref={audioRef}
+        src={
+          'https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3'
+        }
+      />
       <div className={styles.mobileProgress}>
         <div
           className={styles.progress}
@@ -65,11 +71,11 @@ export default function MusicPlayer() {
       <div
         className={styles.mobileArtwork}
         style={{
-          backgroundImage: `url('https://img.youtube.com/vi/XTsmH9b2ADY/0.jpg')`,
+          backgroundImage: `url('/assets/wedding.jpg')`,
         }}
       />
       <div className={styles.track}>
-        Tặng nhau - Pink Frog x Flower
+        Beautiful in white
         <div className={styles.mobileTimer}>
           {!audioRef.current?.currentTime ? '--:--' : formatMusicTime(currentTime!)}
           {' / '}
@@ -92,7 +98,7 @@ export default function MusicPlayer() {
       </div>
       <div className={styles.mobileControls}>
         <div className={styles.control}>
-          <a href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'} target={'_blank'}>
+          <a href={'https://www.youtube.com/watch?v=06-XXOTP3Gc'} target={'_blank'}>
             <IconLink className={styles.iconLink} />
           </a>
         </div>
@@ -145,7 +151,7 @@ export default function MusicPlayer() {
         )}
         <a
           className={styles.smallBtn}
-          href={'https://www.youtube.com/watch?v=XTsmH9b2ADY'}
+          href={'https://www.youtube.com/watch?v=06-XXOTP3Gc'}
           target={'_blank'}
         >
           <IconLink className={styles.iconLink} />
