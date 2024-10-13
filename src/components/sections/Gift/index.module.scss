@@ -1,6 +1,7 @@
 .containerAlbum {
   // min-height: 100vh;
-  background-color: white;
+  background: transparent !important;
+
   .content {
     padding: 4em;
     @media (max-width: 1025px) {
