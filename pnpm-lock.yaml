@@ -1,7 +1,7 @@
 lockfileVersion: '9.0'
 
 settings:
-  autoInstallPeers: false
+  autoInstallPeers: true
   excludeLinksFromLockfile: false
 
 importers:
@@ -50,7 +50,7 @@ importers:
     devDependencies:
       '@hunghg255/eslint-config-react':
         specifier: ^0.0.26
-        version: 0.0.26(typescript@5.6.2)
+        version: 0.0.26(eslint@8.56.0)(typescript@5.6.2)
       '@types/leaflet':
         specifier: ^1.9.12
         version: 1.9.12
@@ -127,6 +127,8 @@ packages:
 
   '@hunghg255/eslint-config-react@0.0.26':
     resolution: {integrity: sha512-ES5aK/yonjLSE7FruoDpjGKOonFa9e1bJpvstd4CHecjLcKhijKRPp4zuvPGY4UgyM75Cnlxirg129TVCgBaSg==}
+    peerDependencies:
+      eslint: '>=7.4.0'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1794,7 +1796,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.1': {}
 
-  '@hunghg255/eslint-config-react@0.0.26(typescript@5.6.2)':
+  '@hunghg255/eslint-config-react@0.0.26(eslint@8.56.0)(typescript@5.6.2)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.17.0(@typescript-eslint/parser@6.17.0(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2)
       '@typescript-eslint/parser': 6.17.0(eslint@8.56.0)(typescript@5.6.2)
