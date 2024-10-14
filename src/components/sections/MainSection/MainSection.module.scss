@@ -104,6 +104,10 @@
   width: 24em;
   transform: rotate(-120deg);
   opacity: 0.2;
+
+  @media (max-width: 1023px) {
+    opacity: 0.8;
+  }
 }
 
 .leaf05 {
@@ -190,7 +194,7 @@
       .markImg {
         position: absolute;
         z-index: 2;
-        top: -40px;
+        top: -42px;
         left: -40px;
         width: calc(100% + 80px);
         height: calc(100% + 80px);

@@ -438,3 +438,8 @@ html {
     --ifm-color-primary-lighter: #009ff7;
   }
 }
+
+
+.vertical-timeline path {
+  fill: #ee3db9 !important;
+}

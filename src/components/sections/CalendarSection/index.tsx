@@ -54,17 +54,14 @@ export default function CalendarSection() {
     >
       <div className={styles.content}>
         <div className={styles.title}>Lịch Trình & Địa Điểm</div>
-
+        <br />
+        <br />
+        <div className={styles.title}>Nhà Trai</div>
         <div className={styles.opening}>
           Hôn lễ sẽ được tổ chức vào{' '}
-          <span className={styles.specific}>12 giờ, ngày 27 tháng 10 năm 2024.</span>
+          <span className={styles.specific}>13 giờ, ngày 27 tháng 10 năm 2024.</span>
         </div>
-        {client && <Countdown date={new Date('2024-10-27T12:00:00+07:00')} renderer={renderer} />}
-
-        <br />
-        <br />
-
-        <div className={styles.title}>Nhà Trai</div>
+        {client && <Countdown date={new Date('2024-10-27T13:00:00+07:00')} renderer={renderer} />}
 
         <div className={styles.location}>
           Buổi lễ được cử hành tại{' '}
@@ -88,8 +85,8 @@ export default function CalendarSection() {
             <img
               src='/qr/address-hung.png'
               style={{
-                width: 250,
-                height: 250,
+                width: 152,
+                height: 152,
               }}
             />
           </a>
@@ -99,13 +96,13 @@ export default function CalendarSection() {
       <div className={styles.content}>
         <div className={styles.title}>Nhà Gái</div>
 
-        {/* <div className={styles.opening}>
+        <div className={styles.opening}>
           Hôn lễ sẽ được tổ chức vào{' '}
-          <span className={styles.specific}>12 giờ, ngày 27 tháng 10 năm 2024.</span>
+          <span className={styles.specific}>11h30 giờ, ngày 27 tháng 10 năm 2024.</span>
         </div>
-        {client && <Countdown date={new Date('2024-10-27T12:00:00+07:00')} renderer={renderer} />} */}
+        {client && <Countdown date={new Date('2024-10-27T11:30:00+07:00')} renderer={renderer} />}
         <div className={styles.location}>
-          {/* Buổi lễ được cử hành tại{' '} */}
+          Buổi lễ được cử hành tại{' '}
           <a
             href={`https://maps.app.goo.gl/9w7YTb6yGpb1rntw7`}
             className={styles.address}
@@ -122,8 +119,8 @@ export default function CalendarSection() {
             <img
               src='/qr/address-xuan.png'
               style={{
-                width: 250,
-                height: 250,
+                width: 152,
+                height: 152,
               }}
             />
           </a>

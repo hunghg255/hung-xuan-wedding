@@ -1,10 +1,15 @@
 import React from 'react';
 import 'react-photo-view/dist/react-photo-view.css';
-import styles from './index.module.scss';
 import { Alegreya } from 'next/font/google';
+import useCopied from '@app/hooks/useCopied';
 const alegreyaFont = Alegreya({ subsets: ['latin'] });
 
+import styles from './index.module.scss';
+import { toast } from 'sonner';
+
 const Gift = () => {
+  const { copyToClipboard } = useCopied();
+
   return (
     <div
       id='gift'
@@ -25,10 +30,15 @@ const Gift = () => {
               borderRadius: '10px',
               backgroundColor: 'white',
             }}
+            onClick={async () => {
+              copyToClipboard('107872465857');
+              toast.success('Đã sao chép số tài khoản');
+            }}
           >
+            <p>Cô dâu</p>
             <img src='/qr/qr-xuan.png' alt='bni' />
             <p>Vietinbank - 107872465857</p>
-            <p>Ngô Thị Xuân</p>
+            <p>NGÔ THỊ XUÂN</p>
           </div>
           <div
             style={{
@@ -38,10 +48,15 @@ const Gift = () => {
               borderRadius: '10px',
               backgroundColor: 'white',
             }}
+            onClick={async () => {
+              copyToClipboard('00002608430');
+              toast.success('Đã sao chép số tài khoản');
+            }}
           >
+            <p>Chú rể</p>
             <img src='/qr/qr-hung.jpg' alt='bni' />
             <p>Tpbank - 00002608430</p>
-            <p>Hoàng Gia Hùng</p>
+            <p>HOÀNG GIA HÙNG</p>
           </div>
         </div>
       </div>

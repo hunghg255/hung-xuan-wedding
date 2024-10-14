@@ -19,7 +19,8 @@
     "react-photo-view": "^1.2.6",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.78.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "sonner": "^1.5.0"
   },
   "devDependencies": {
     "@hunghg255/eslint-config-react": "^0.0.26",

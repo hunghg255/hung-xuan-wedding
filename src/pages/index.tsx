@@ -33,22 +33,22 @@ export default function Home() {
       <div className={styles.figure}>
         <img
           className={styles.bgFigure}
-          src={'/figures/wedding-main-02.jpg'}
+          src={'/assets/bg1.png'}
           style={{
             height: '100vh',
             position: 'absolute',
-            left: -200,
+            left: -40,
             right: 0,
             top: 0,
             bottom: 0,
             zIndex: 0,
-            opacity: 0.24,
+            opacity: 0.3,
           }}
         />
         <div className={styles.imgSmall}>
           <div className={styles.bg}></div>
           <div>
-            <img src={'/figures/wedding-main-01.JPG'} />
+            <img src={'/assets/img1.png'} />
           </div>
           <img className={styles.markImg} src={'/figures/vectorflower.png'} />
         </div>

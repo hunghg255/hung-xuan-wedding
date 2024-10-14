@@ -21,7 +21,7 @@ export default function MainSection() {
         <div>
           <div className={styles.bg}></div>
           <div className={styles.figure}>
-            <img src={'/figures/wedding-main-01.JPG'} />
+            <img src={'/assets/img1.png'} />
           </div>
           <img className={styles.markImg} src={'/figures/vectorflower.png'} />
         </div>
