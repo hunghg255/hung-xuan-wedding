@@ -5,52 +5,140 @@ import styles from './index.module.scss';
 import { Alegreya } from 'next/font/google';
 const alegreyaFont = Alegreya({ subsets: ['latin'] });
 
-const photoImages = [
-  '/album/1.jpg',
-  '/album/2.jpg',
-  '/album/3.jpg',
-  '/album/4.jpg',
-  '/album/5.jpg',
-  '/album/6.jpg',
-  '/album/7.jpg',
-  '/album/1.jpg',
-  '/album/2.jpg',
-  '/album/3.jpg',
-  '/album/4.jpg',
-  '/album/5.jpg',
-  '/album/6.jpg',
-  '/album/7.jpg',
-  '/album/1.jpg',
-  '/album/2.jpg',
-  '/album/3.jpg',
-  '/album/4.jpg',
-  '/album/5.jpg',
-  '/album/6.jpg',
-  '/album/7.jpg',
-];
+import { ColumnsPhotoAlbum } from 'react-photo-album';
+import 'react-photo-album/columns.css';
+import Image from 'next/image';
 
-const useIntersectionObserver = (options: any) => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref: any = useRef(null);
+const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
-    }, options);
+function assetLink(asset: string, width: number) {
+  return `http://localhost:3000/_next/image?url=${encodeURIComponent(`/album/${asset}`)}&w=${width}&q=75`;
+}
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [options]);
-
-  return [ref, isIntersecting];
-};
+const photos = [
+  {
+    asset: '2.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Hiking boots',
+  },
+  {
+    asset: '3.jpg',
+    width: 1703,
+    height: 2560,
+    alt: 'Purple petaled flowers near a mountain',
+  },
+  {
+    asset: '4.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A person pointing at a beige map',
+  },
+  {
+    asset: '5.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Two hikers walking toward a snow-covered mountain',
+  },
+  {
+    asset: '6.jpg',
+    width: 2560,
+    height: 1707,
+    alt: 'A silver and black coffee mug on a brown wooden table',
+  },
+  {
+    asset: '7.jpg',
+    width: 1707,
+    height: 2560,
+    alt: "A worm's eye view of trees at night",
+  },
+  {
+    asset: '8.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A pine tree forest near a mountain at sunset',
+  },
+  {
+    asset: '9.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Silhouette photo of three hikers near tall trees',
+  },
+  {
+    asset: '10.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A person sitting near a bonfire surrounded by trees',
+  },
+  {
+    asset: '11.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Green moss on gray rocks in a river',
+  },
+  {
+    asset: '12.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Landscape photography of mountains',
+  },
+  {
+    asset: '13.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A pathway between green trees during daytime',
+  },
+  {
+    asset: '14.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A man wearing a black jacket and backpack standing on a grass field during sunset',
+  },
+  {
+    asset: '15.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Green pine trees under white clouds during the daytime',
+  },
+  {
+    asset: '17.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A tall mountain with a waterfall running down its side',
+  },
+  {
+    asset: '18.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Blue mountains',
+  },
+  {
+    asset: '19.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'Green trees on a brown mountain under a blue sky during the daytime',
+  },
+  {
+    asset: '20.jpg',
+    width: 1707,
+    height: 2560,
+    alt: 'A red flower on a green grass field during the daytime',
+  },
+].map(
+  ({ asset, alt, width, height }) =>
+    ({
+      src: assetLink(asset, width),
+      asset,
+      alt,
+      width,
+      height,
+      srcSet: breakpoints.map((breakpoint) => ({
+        src: assetLink(asset, breakpoint),
+        width: breakpoint,
+        height: Math.round((height / width) * breakpoint),
+      })),
+    }) as any,
+);
 
 const Album = () => {
   return (
@@ -64,49 +152,35 @@ const Album = () => {
       <div className={styles.content}>
         <div className={styles.title}>Album ảnh</div>
 
-        <PhotoProvider
-          easing={(type) =>
-            type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)'
-          }
-        >
-          <div className={styles.list}>
+        <PhotoProvider>
+          {/* <div className={styles.list}>
             {photoImages.map((item, index) => (
               <LazyImage key={index} src={item} delay={index * 50} />
             ))}
-          </div>
+          </div> */}
+          <ColumnsPhotoAlbum
+            photos={photos}
+            render={{
+              image: ({ src, alt, ...props }, ctx) => {
+                console.log({
+                  ctx,
+                });
+
+                return (
+                  <PhotoView
+                    src={`/album/${ctx.photo.asset}`}
+                    overlay={<div>{`/album/${ctx.photo.asset}`}</div>}
+                  >
+                    <img src={src} alt={alt} data-testid='image' {...props} />
+                  </PhotoView>
+                );
+              },
+            }}
+          />
         </PhotoProvider>
       </div>
     </div>
   );
 };
 
-const LazyImage = ({ src, delay }: any) => {
-  const [ref, isIntersecting] = useIntersectionObserver({
-    threshold: 0.1,
-  });
-
-  const [hasLoaded, setHasLoaded] = useState(false);
-
-  if (isIntersecting && !hasLoaded) {
-    setHasLoaded(true);
-  }
-
-  return (
-    <div
-      ref={ref}
-      className={`${styles.lazyImage} ${hasLoaded ? styles.visible : ''}`}
-      style={{
-        transitionDelay: `${delay}ms`,
-      }}
-    >
-      {hasLoaded ? (
-        <PhotoView src={src} overlay={<div>{src}</div>}>
-          <img src={src} alt='' />
-        </PhotoView>
-      ) : (
-        <div style={{ height: '200px', backgroundColor: '#f0f0f0' }}></div> // Placeholder
-      )}
-    </div>
-  );
-};
 export default Album;

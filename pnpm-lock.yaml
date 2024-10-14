@@ -1,7 +1,7 @@
 lockfileVersion: '9.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 importers:
@@ -29,6 +29,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-photo-album:
+        specifier: ^3.0.2
+        version: 3.0.2(@types/react@18.3.6)(react@18.3.1)
       react-photo-view:
         specifier: ^1.2.6
         version: 1.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -47,7 +50,7 @@ importers:
     devDependencies:
       '@hunghg255/eslint-config-react':
         specifier: ^0.0.26
-        version: 0.0.26(eslint@8.56.0)(typescript@5.6.2)
+        version: 0.0.26(typescript@5.6.2)
       '@types/leaflet':
         specifier: ^1.9.12
         version: 1.9.12
@@ -124,8 +127,6 @@ packages:
 
   '@hunghg255/eslint-config-react@0.0.26':
     resolution: {integrity: sha512-ES5aK/yonjLSE7FruoDpjGKOonFa9e1bJpvstd4CHecjLcKhijKRPp4zuvPGY4UgyM75Cnlxirg129TVCgBaSg==}
-    peerDependencies:
-      eslint: '>=7.4.0'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1402,6 +1403,16 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-photo-album@3.0.2:
+    resolution: {integrity: sha512-w3+8i6aj9l1jRfcubgVbAlBGSdtiXcqWdcwZcH4/Bavc+v7X7h+S3TkQ723pvDABjhaaxS168g9ECEBP6xnKrQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/react': '>=18'
+      react: '>=18'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   react-photo-view@1.2.6:
     resolution: {integrity: sha512-Fq17yxkMIv0oFp7HOJr39HgCZRP6A9K5T5rixJ4flSUYT2OO3V8vNxEExjhIKgIrfmTu+mDnHYEsI9RRWi1JHw==}
     peerDependencies:
@@ -1783,7 +1794,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.1': {}
 
-  '@hunghg255/eslint-config-react@0.0.26(eslint@8.56.0)(typescript@5.6.2)':
+  '@hunghg255/eslint-config-react@0.0.26(typescript@5.6.2)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.17.0(@typescript-eslint/parser@6.17.0(eslint@8.56.0)(typescript@5.6.2))(eslint@8.56.0)(typescript@5.6.2)
       '@typescript-eslint/parser': 6.17.0(eslint@8.56.0)(typescript@5.6.2)
@@ -3202,6 +3213,12 @@ snapshots:
       react: 18.3.1
 
   react-is@16.13.1: {}
+
+  react-photo-album@3.0.2(@types/react@18.3.6)(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.6
 
   react-photo-view@1.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
