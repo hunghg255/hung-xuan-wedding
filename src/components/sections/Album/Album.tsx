@@ -12,7 +12,7 @@ import Image from 'next/image';
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 function assetLink(asset: string, width: number) {
-  return `http://localhost:3000/_next/image?url=${encodeURIComponent(`/album/${asset}`)}&w=${width}&q=75`;
+  return `https://hungxuan.us/_next/image?url=${encodeURIComponent(`/album/${asset}`)}&w=${width}&q=75`;
 }
 
 const photos = [
