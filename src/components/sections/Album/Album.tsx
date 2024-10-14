@@ -162,10 +162,6 @@ const Album = () => {
             photos={photos}
             render={{
               image: ({ src, alt, ...props }, ctx) => {
-                console.log({
-                  ctx,
-                });
-
                 return (
                   <PhotoView
                     src={`/album/${ctx.photo.asset}`}
