@@ -23,6 +23,7 @@ const Gift = () => {
               padding: '10px',
               margin: '10px',
               borderRadius: '10px',
+              backgroundColor: 'white',
             }}
           >
             <img src='/qr/qr-xuan.png' alt='bni' />
@@ -35,6 +36,7 @@ const Gift = () => {
               padding: '10px',
               margin: '10px',
               borderRadius: '10px',
+              backgroundColor: 'white',
             }}
           >
             <img src='/qr/qr-hung.jpg' alt='bni' />
