@@ -160,6 +160,11 @@ const Album = () => {
           </div> */}
           <ColumnsPhotoAlbum
             photos={photos}
+            columns={(containerWidth) => {
+              if (containerWidth <= 475) return 2;
+
+              return 3;
+            }}
             render={{
               image: ({ src, alt, ...props }, ctx) => {
                 return (
