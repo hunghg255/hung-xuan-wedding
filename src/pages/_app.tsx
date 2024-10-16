@@ -7,6 +7,9 @@ import { Toaster } from 'sonner';
 import { AppProps } from 'next/app';
 
 const Plum = dynamic(() => import('@app/components/Plum/Plum'), { ssr: false });
+const AosComponent = dynamic(() => import('@app/components/AosComponent/AosComponent'), {
+  ssr: false,
+});
 
 const ShantellSanFont = Shantell_Sans({
   subsets: ['latin', 'vietnamese'],
@@ -72,6 +75,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Toaster richColors position='bottom-center' duration={1000} />
 
       {/* <Plum /> */}
+      <AosComponent />
     </>
   );
 }

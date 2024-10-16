@@ -167,7 +167,9 @@ const Album = () => {
                     src={`/album/${ctx.photo.asset}`}
                     overlay={<div>{`/album/${ctx.photo.asset}`}</div>}
                   >
-                    <img src={src} alt={alt} data-testid='image' {...props} />
+                    <div data-aos='zoom-in' className='aos-animate-hide'>
+                      <img src={src} alt={alt} {...props} />
+                    </div>
                   </PhotoView>
                 );
               },
