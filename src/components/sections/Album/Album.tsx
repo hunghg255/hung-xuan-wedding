@@ -161,7 +161,7 @@ const Album = () => {
           <ColumnsPhotoAlbum
             photos={photos}
             columns={(containerWidth) => {
-              if (containerWidth <= 475) return 2;
+              if (containerWidth <= 475) return 1;
 
               return 3;
             }}
