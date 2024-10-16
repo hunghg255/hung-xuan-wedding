@@ -21,9 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Hùng Xuân</title>
-        <meta name='author' content='Hùng Xuân' />
-        <meta name='keywords' content='Hùng Xuân' />
+        <title>Xuân 💗 Hùng</title>
+        <meta name='author' content='Xuân 💗 Hùng' />
+        <meta name='keywords' content='Xuân 💗 Hùng' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <meta
           name='viewport'
@@ -32,36 +32,36 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <meta
           name='description'
-          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+          content='A beautiful wedding celebration between Xuân and Hùng, filled with love, joy, and cherished moments.'
         />
         <meta name='rating' content='general' />
         <meta name='robots' content='index, follow' />
         <meta name='googlebot' content={'index,follow'} />
         <meta charSet='utf-8' />
         <meta name='theme-color' content='#476055' />
-        <meta name='title' content='Hùng Xuân' />
+        <meta name='title' content='Xuân 💗 Hùng' />
         <meta
           name='description'
-          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+          content='A beautiful wedding celebration between Xuân and Hùng, filled with love, joy, and cherished moments.'
         />
 
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://www.hungxuan.us/' />
-        <meta property='og:title' content='Hùng Xuân' />
+        <meta property='og:title' content='Xuân 💗 Hùng' />
         <meta
           property='og:description'
-          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+          content='A beautiful wedding celebration between Xuân and Hùng, filled with love, joy, and cherished moments.'
         />
-        <meta property='og:image' content='https://www.hungxuan.us/og/og.jpg' />
+        <meta property='og:image' content='https://www.hungxuan.us/og/og1.png' />
 
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://www.hungxuan.us/' />
-        <meta property='twitter:title' content='Hùng Xuân' />
+        <meta property='twitter:title' content='Xuân 💗 Hùng' />
         <meta
           property='twitter:description'
-          content='A beautiful wedding celebration between Hùng and Xuân, filled with love, joy, and cherished moments.'
+          content='A beautiful wedding celebration between Xuân and Hùng, filled with love, joy, and cherished moments.'
         />
-        <meta property='twitter:image' content='https://www.hungxuan.us/og/og.jpg' />
+        <meta property='twitter:image' content='https://www.hungxuan.us/og/og1.png' />
       </Head>
 
       <style jsx global>{`
