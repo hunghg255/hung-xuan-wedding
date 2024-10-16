@@ -45,21 +45,21 @@ export default function MainSection() {
         }}
       >
         <div
-          className={styles.groom}
-          style={{
-            fontWeight: 500,
-          }}
-        >
-          Gia Hùng
-        </div>
-        <IconHeartFill className={styles.iconHeart} />
-        <div
           style={{
             fontWeight: 500,
           }}
           className={styles.bride}
         >
           Ngô Xuân
+        </div>
+        <IconHeartFill className={styles.iconHeart} />
+        <div
+          className={styles.groom}
+          style={{
+            fontWeight: 500,
+          }}
+        >
+          Gia Hùng
         </div>
       </div>
       {/*<div className={styles.shortStory} style={{fontFamily: alegreyaFont.style.fontFamily}}>*/}
