@@ -450,6 +450,10 @@ html {
   transition: all 0.8s ease-in-out;
 }
 
-.aos-animate-show {
+.aos-animate-hide img {
+  width: 100%;
+}
+
+.aos-animate-show .aos-animate-hide {
   transform: scale(1) !important;
 }

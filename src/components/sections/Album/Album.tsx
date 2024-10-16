@@ -17,113 +17,113 @@ function assetLink(asset: string, width: number) {
 
 const photos = [
   {
-    asset: '2.jpg',
+    asset: '2.webp',
     width: 1707,
     height: 2560,
     alt: 'Hiking boots',
   },
   {
-    asset: '3.jpg',
+    asset: '3.webp',
     width: 1703,
     height: 2560,
     alt: 'Purple petaled flowers near a mountain',
   },
   {
-    asset: '4.jpg',
+    asset: '4.webp',
     width: 1707,
     height: 2560,
     alt: 'A person pointing at a beige map',
   },
   {
-    asset: '5.jpg',
+    asset: '5.webp',
     width: 1707,
     height: 2560,
     alt: 'Two hikers walking toward a snow-covered mountain',
   },
   {
-    asset: '6.jpg',
+    asset: '6.webp',
     width: 2560,
     height: 1707,
     alt: 'A silver and black coffee mug on a brown wooden table',
   },
   {
-    asset: '7.jpg',
+    asset: '7.webp',
     width: 1707,
     height: 2560,
     alt: "A worm's eye view of trees at night",
   },
   {
-    asset: '8.jpg',
+    asset: '8.webp',
     width: 1707,
     height: 2560,
     alt: 'A pine tree forest near a mountain at sunset',
   },
   {
-    asset: '9.jpg',
+    asset: '9.webp',
     width: 1707,
     height: 2560,
     alt: 'Silhouette photo of three hikers near tall trees',
   },
   {
-    asset: '10.jpg',
+    asset: '10.webp',
     width: 1707,
     height: 2560,
     alt: 'A person sitting near a bonfire surrounded by trees',
   },
   {
-    asset: '11.jpg',
+    asset: '11.webp',
     width: 1707,
     height: 2560,
     alt: 'Green moss on gray rocks in a river',
   },
-  {
-    asset: '12.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'Landscape photography of mountains',
-  },
-  {
-    asset: '13.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'A pathway between green trees during daytime',
-  },
-  {
-    asset: '14.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'A man wearing a black jacket and backpack standing on a grass field during sunset',
-  },
-  {
-    asset: '15.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'Green pine trees under white clouds during the daytime',
-  },
-  {
-    asset: '17.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'A tall mountain with a waterfall running down its side',
-  },
-  {
-    asset: '18.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'Blue mountains',
-  },
-  {
-    asset: '19.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'Green trees on a brown mountain under a blue sky during the daytime',
-  },
-  {
-    asset: '20.jpg',
-    width: 1707,
-    height: 2560,
-    alt: 'A red flower on a green grass field during the daytime',
-  },
+  // {
+  //   asset: '12.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'Landscape photography of mountains',
+  // },
+  // {
+  //   asset: '13.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'A pathway between green trees during daytime',
+  // },
+  // {
+  //   asset: '14.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'A man wearing a black jacket and backpack standing on a grass field during sunset',
+  // },
+  // {
+  //   asset: '15.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'Green pine trees under white clouds during the daytime',
+  // },
+  // {
+  //   asset: '17.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'A tall mountain with a waterfall running down its side',
+  // },
+  // {
+  //   asset: '18.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'Blue mountains',
+  // },
+  // {
+  //   asset: '19.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'Green trees on a brown mountain under a blue sky during the daytime',
+  // },
+  // {
+  //   asset: '20.webp',
+  //   width: 1707,
+  //   height: 2560,
+  //   alt: 'A red flower on a green grass field during the daytime',
+  // },
 ].map(
   ({ asset, alt, width, height }) =>
     ({
@@ -173,7 +173,7 @@ const Album = () => {
                     overlay={<div>{`/album/${ctx.photo.asset}`}</div>}
                   >
                     <div data-aos='zoom-in' className='aos-animate-hide'>
-                      <img src={src} alt={alt} {...props} />
+                      <img src={`/album/${ctx.photo.asset}`} alt={alt} />
                     </div>
                   </PhotoView>
                 );

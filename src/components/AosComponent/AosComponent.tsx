@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const AosComponent = () => {
   useEffect(() => {
     const t = setTimeout(() => {
-      const data = document.querySelectorAll('[data-aos]');
+      const data = document.querySelectorAll('.react-photo-album--photo');
 
       const observer = new IntersectionObserver(
         (entries) => {
@@ -24,7 +24,7 @@ const AosComponent = () => {
       data.forEach((item) => {
         observer.observe(item);
       });
-    }, 1000);
+    }, 2000);
 
     return () => {
       clearTimeout(t);
